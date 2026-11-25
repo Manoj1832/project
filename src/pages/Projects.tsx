@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
-import { ArrowUpRight, ChevronLeft, ChevronRight, X } from "lucide-react";
+import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
@@ -232,18 +232,10 @@ const Projects = () => {
         <DialogContent className="max-w-4xl p-0 bg-[#111111] text-[#FFFFFF] border border-[#2E2E2E] rounded-none overflow-hidden">
           {activeProject && (
             <div>
-              <div className="flex items-center justify-between px-6 py-4 border-b border-[#2E2E2E]">
+              <div className="px-6 py-4 pr-12 border-b border-[#2E2E2E]">
                 <DialogTitle className="text-base font-display font-medium text-[#FFFFFF]">
                   {activeProject.title} — {activeProject.category} ({activeProject.location})
                 </DialogTitle>
-                <button
-                  type="button"
-                  onClick={() => setViewerId(null)}
-                  aria-label="Close project viewer"
-                  className="p-2 text-[#B5B5B5] hover:text-[#FFFFFF]"
-                >
-                  <X className="w-5 h-5" />
-                </button>
               </div>
               <div className="relative bg-[#000000]">
                 <img
