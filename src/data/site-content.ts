@@ -18,8 +18,6 @@ export const SITE_CONTENT = {
     mobileSubhead: "Turnkey homes, commercial builds & DTCP approvals.",
     desktopSubhead:
       "Engineer-led residential homes, commercial complexes, Vaastu-aligned plans, and DTCP approvals delivered with stage-wise transparency.",
-    primaryCta: "Book Site Visit",
-    secondaryCta: "View Works",
     capabilities: [
       "Turnkey Homes",
       "Commercial & PEB",

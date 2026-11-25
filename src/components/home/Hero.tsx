@@ -1,8 +1,4 @@
-import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { SITE_CONTENT } from "@/data/site-content";
-import { trackEvent } from "@/lib/telemetry";
 
 const Hero = () => {
   const { hero } = SITE_CONTENT;
@@ -45,30 +41,10 @@ const Hero = () => {
             >
               {hero.headline}
             </h1>
-            <p className="text-[#444444] text-sm md:text-base leading-relaxed max-w-lg mb-5 md:mb-7">
+            <p className="text-[#444444] text-sm md:text-base leading-relaxed max-w-lg">
               <span className="md:hidden">{hero.mobileSubhead}</span>
               <span className="hidden md:inline">{hero.desktopSubhead}</span>
             </p>
-
-            <div className="flex flex-row gap-2.5 md:gap-3">
-              <Button size="default" className="md:h-11 md:px-6" asChild>
-                <Link
-                  to="/appointment"
-                  onClick={() => trackEvent({ event: "cta_click", metadata: { location: "hero_book" } })}
-                >
-                  {hero.primaryCta}
-                  <ArrowUpRight className="w-4 h-4" />
-                </Link>
-              </Button>
-              <Button variant="outline-gold" size="default" className="md:h-11 md:px-6" asChild>
-                <Link
-                  to="/projects"
-                  onClick={() => trackEvent({ event: "cta_click", metadata: { location: "hero_projects" } })}
-                >
-                  {hero.secondaryCta}
-                </Link>
-              </Button>
-            </div>
           </div>
         </div>
 
