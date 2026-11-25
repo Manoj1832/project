@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   name: "Adithya Constructions & Architects",
   shortName: "Adithya Constructions",
   tagline: "We build your dreams",
-  domain: "https://adithyaconstructions.com",
+  domain: "https://adithyaconstructionscbe.com",
   serviceRegions: ["Coimbatore", "Salem"],
   state: "Tamil Nadu",
   country: "India",
