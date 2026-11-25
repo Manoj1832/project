@@ -13,28 +13,28 @@ const featuredProjects = [
     title: "Contemporary Residence",
     category: "Residential",
     location: "Coimbatore",
-    image: "/assets/project2(residential).jpg",
+    image: "/assets/thumb-residential.webp",
     href: "/projects?type=residential",
   },
   {
     title: "Commercial Complex",
     category: "Commercial",
     location: "Coimbatore",
-    image: "/assets/project5(commercial).jpg",
+    image: "/assets/thumb-commercial.webp",
     href: "/projects?type=commercial",
   },
   {
     title: "Interior Architecture",
     category: "Interior",
     location: "Coimbatore",
-    image: "/assets/int1.jpg",
+    image: "/assets/thumb-interior.webp",
     href: "/projects?type=interior",
   },
   {
     title: "Structural Steel (PEB)",
     category: "PEB",
     location: "Coimbatore",
-    image: "/assets/peb1.jpg",
+    image: "/assets/thumb-peb.webp",
     href: "/projects?type=peb",
   },
 ];
@@ -161,7 +161,7 @@ const Index = () => {
                     <div className="w-10 h-10 border border-[#EAEAEA] bg-[#F5F5F5] group-hover:bg-[#FFFFFF] flex items-center justify-center transition-colors">
                       <BrandIcon name={service.icon} className="w-5 h-5" />
                     </div>
-                    <span className="text-xs font-mono text-[#777777] tabular-nums">
+                    <span className="text-xs font-mono text-[#595959] tabular-nums">
                       0{idx + 1}
                     </span>
                   </div>
@@ -193,7 +193,7 @@ const Index = () => {
                   <div className="w-10 h-10 border border-[#EAEAEA] bg-[#FFFFFF] flex items-center justify-center">
                     <BrandIcon name="quality-assurance" className="w-5 h-5" />
                   </div>
-                  <span className="text-xs font-mono text-[#777777]">70-PT</span>
+                  <span className="text-xs font-mono text-[#595959]">70-PT</span>
                 </div>
                 <h3
                   className="font-display font-semibold text-[#111111] mb-2"
@@ -307,6 +307,8 @@ const Index = () => {
                   <img
                     src={project.image}
                     alt={`${project.title} in ${project.location}`}
+                    width={640}
+                    height={480}
                     className="w-full h-full object-cover editorial-photo group-hover:scale-[1.02]"
                     loading="lazy"
                     decoding="async"
@@ -314,7 +316,7 @@ const Index = () => {
                 </div>
                 <div className="p-3 md:p-5 flex items-center justify-between border-t border-[#EAEAEA]">
                   <div className="min-w-0">
-                    <p className="text-[10px] md:text-xs uppercase tracking-[0.12em] text-[#777777] mb-0.5 truncate">
+                    <p className="text-[10px] md:text-xs uppercase tracking-[0.12em] text-[#595959] mb-0.5 truncate">
                       {project.category} • {project.location}
                     </p>
                     <h3 className="font-display font-medium text-sm md:text-base text-[#111111] truncate">
@@ -340,8 +342,10 @@ const Index = () => {
             <div className="lg:col-span-7 bg-[#FFFFFF] border border-[#EAEAEA] flex flex-col justify-between overflow-hidden">
               <div className="bg-[#FFFFFF] p-3 sm:p-6 flex items-center justify-center overflow-hidden">
                 <img
-                  src="/assets/5S.jpg"
+                  src="/assets/5S.webp"
                   alt="5S Quality Practice on construction site"
+                  width={600}
+                  height={500}
                   className="w-full max-h-[260px] md:max-h-[360px] object-contain"
                   loading="lazy"
                 />
@@ -382,7 +386,7 @@ const Index = () => {
                         <h4 className="font-display font-semibold text-sm md:text-base text-[#111111]">
                           {leader.name}
                         </h4>
-                        <p className="text-[10px] md:text-xs uppercase tracking-[0.1em] text-[#777777] mt-0.5 mb-1">
+                        <p className="text-[10px] md:text-xs uppercase tracking-[0.1em] text-[#595959] mt-0.5 mb-1">
                           {leader.role}
                         </p>
                         <p className="text-xs md:text-sm text-[#444444] leading-relaxed">

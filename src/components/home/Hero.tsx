@@ -58,7 +58,7 @@ const Hero = () => {
                   key={item}
                   className="shrink-0 py-2.5 pr-5 flex items-center gap-2 border-r border-[#EAEAEA] last:border-r-0"
                 >
-                  <span className="text-[10px] font-mono text-[#777777] tabular-nums">
+                  <span className="text-[10px] font-mono text-[#595959] tabular-nums">
                     0{idx + 1}
                   </span>
                   <span className="text-[11px] font-medium text-[#111111] whitespace-nowrap">
@@ -71,7 +71,7 @@ const Hero = () => {
             <div className="hidden lg:grid grid-cols-4 divide-x divide-[#EAEAEA]">
               {hero.capabilities.map((item, idx) => (
                 <div key={item} className="py-3 px-6 flex items-center gap-3">
-                  <span className="text-xs font-mono text-[#777777] tabular-nums">
+                  <span className="text-xs font-mono text-[#595959] tabular-nums">
                     0{idx + 1}
                   </span>
                   <span className="text-sm font-medium text-[#111111]">

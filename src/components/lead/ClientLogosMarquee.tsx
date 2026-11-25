@@ -53,6 +53,8 @@ const ClientLogosMarquee = () => {
                 <img
                   src={logo.src}
                   alt={logo.label}
+                  width={96}
+                  height={44}
                   className="h-9 md:h-11 w-auto object-contain"
                   loading="lazy"
                   decoding="async"
