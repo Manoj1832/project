@@ -8,14 +8,14 @@ interface RouteMeta {
 
 const ROUTE_META: Record<string, RouteMeta> = {
   "/": {
-    title: `Adithya Construction | Best Engineering, Architecture & Budget-Friendly Buildings`,
+    title: `Adithya Construction | Civil Engineer & Builders in Coimbatore`,
     description:
-      "Cost-effective, low-budget to premium residential construction, commercial buildings, architecture, and structural engineering in Coimbatore & Salem.",
+      "Adithya Construction & Architects — Civil engineer-led residential construction, commercial buildings, architecture, and DTCP approvals in Coimbatore & Salem.",
   },
   "/about": {
-    title: `About Us — Best Engineering & Architecture | ${SITE_CONFIG.shortName}`,
+    title: `Civil Engineers & Studio | ${SITE_CONFIG.shortName} Coimbatore`,
     description:
-      "Civil-engineer-led architecture and cost-effective building studio in Coimbatore & Salem led by Er. Boobalan V. and Er. Premi T.",
+      "Meet the B.E. Civil Engineers behind Adithya Construction in Coimbatore & Salem—Er. Boobalan V. and Er. Premi T.",
   },
   "/services": {
     title: `Construction, Architecture & Engineering Services | ${SITE_CONFIG.shortName}`,
